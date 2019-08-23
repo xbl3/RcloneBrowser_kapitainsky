@@ -1,7 +1,7 @@
 RcloneBrowser
 =============
 
-[![Travis CI Build Status][img1]][1] [![AppVeyor Build Status][img2]][2] [![Downloads][img3]][3] [![Release][img4]][4] [![License][img5]][5]
+[![Downloads][img3]][3] [![Release][img4]][4] [![License][img5]][5]
 
 Simple cross platfrom GUI for rclone command line tool.
 Supports Windows, macOS and GNU/Linux.
@@ -18,28 +18,42 @@ I have fixed whatever I found still not working and added few minor tweaks. I've
 Below sample screenshots:
 
 
-macOS
-
+### macOS
 ![alt text](https://github.com/kapitainsky/RcloneBrowser/wiki/images/Screenshot1.png)
 
 
-linux
-
+### Linux
 ![alt text](https://github.com/kapitainsky/RcloneBrowser/wiki/images/Screenshot2.png)
 
-Windows
 
+### Windows
 ![alt text](https://github.com/kapitainsky/RcloneBrowser/wiki/images/Screenshot3.png)
 
 
 
-All releases are signed with my PGP key
+All releases (https://github.com/kapitainsky/RcloneBrowser/releases) are signed with my PGP key
 
 Fingerprint: 5173 1FD9 E29C BEC2 8506  8F02 31DB 6AEE 3AC2 8075
 
 https://keys.openpgp.org/vks/v1/by-fingerprint/51731FD9E29CBEC285068F0231DB6AEE3AC28075
 
 Enjoy and report if anything is broken. Please note that I am not a programmer and I doubt I could work on any major changes. Also rclone-browser as it is now is enough for my usage. But small fixes and tweaks are always possible - feel free to report any issues.
+
+Build instructions for other Unix-like systems
+----------------------------------------------
+
+Example commands are for Debian - they might differ for other systems
+
+1. Make sure you have working compiler and cmake installed `sudo apt install g++ cmake`
+2. Install Qt v5 with package manager `sudo apt install qtbase5-dev`
+2. Clone source code from this repo `git clone https://github.com/kapitainsky/RcloneBrowser.git`
+3. Go to source folder `cd RcloneBrowser`
+3. Create new `build` folder next to `src` folder - `mkdir build && cd build`
+4. Run `cmake ..` from `build` folder to create makefile
+5. Run `cmake --build .` from `build` folder to create binary
+6. And last but not least don't forget to install rclone `curl https://rclone.org/install.sh | sudo bash`
+
+
 
 
 Original readme from https://github.com/mmozeiko/RcloneBrowser 
@@ -121,9 +135,9 @@ Anyone is free to copy, modify, publish, use, compile, sell, or distribute this 
 
 [1]: https://travis-ci.org/DinCahill/RcloneBrowser/
 [2]: https://ci.appveyor.com/project/DinCahill/RcloneBrowser
-[3]: https://github.com/DinCahill/RcloneBrowser/releases
-[4]: https://github.com/DinCahill/RcloneBrowser/releases/latest
-[5]: https://github.com/DinCahill/RcloneBrowser/blob/master/LICENSE
+[3]: https://github.com/kapitainsky/RcloneBrowser/releases
+[4]: https://github.com/kapitainsky/RcloneBrowser/releases/latest
+[5]: https://github.com/kapitainsky/RcloneBrowser/blob/master/LICENSE
 [6]: https://mpv.io/
 [7]: https://aur.archlinux.org/packages/rclone-browser
 [8]: https://www.visualstudio.com/en-us/news/releasenotes/vs2013-community-vs
@@ -131,9 +145,9 @@ Anyone is free to copy, modify, publish, use, compile, sell, or distribute this 
 [10]: https://www.qt.io/download-open-source/
 [img1]: https://api.travis-ci.org/DinCahill/RcloneBrowser.svg?branch=master
 [img2]: https://ci.appveyor.com/api/projects/status/github/DinCahill/RcloneBrowser?branch=master&svg=true
-[img3]: https://img.shields.io/github/downloads/DinCahill/RcloneBrowser/total.svg?maxAge=3600
-[img4]: https://img.shields.io/github/release/DinCahill/RcloneBrowser.svg?maxAge=3600
-[img5]: https://img.shields.io/github/license/DinCahill/RcloneBrowser.svg?maxAge=2592000
+[img3]: https://img.shields.io/github/downloads/kapitainsky/RcloneBrowser/total.svg?maxAge=3600
+[img4]: https://img.shields.io/github/release/kapitainsky/RcloneBrowser.svg?maxAge=3600
+[img5]: https://img.shields.io/github/license/kapitainsky/RcloneBrowser.svg?maxAge=2592000
 [screenshot1]: https://raw.githubusercontent.com/wiki/mmozeiko/RcloneBrowser/screenshot1.png
 [screenshot2]: https://raw.githubusercontent.com/wiki/mmozeiko/RcloneBrowser/screenshot2.png
 [screenshot3]: https://raw.githubusercontent.com/wiki/mmozeiko/RcloneBrowser/screenshot3.png
