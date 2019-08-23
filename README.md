@@ -7,7 +7,26 @@ Simple cross platfrom GUI for rclone command line tool.
 Supports Windows, macOS and GNU/Linux.
 
 
+Being rclone-browser user for some time and got annoyed by small not working bits and pieces. Original repo (https://github.com/mmozeiko/RcloneBrowser) has not been touched for years and in the meantime rclone changed few things breaking some rclone-browser functionality.
 
+I've looked around but could not find anything fully working. Some github users made progress in fixing and adding stuff so I've built upon it.
+
+I used DinCahill's changes (https://github.com/DinCahill/RcloneBrowser) as a base of my version.
+
+I have fixed whatever I found still not working and added few minor tweaks. I've recompiled and repacked everything using latest Qt (5.13.0). This on its own fixed some issues and added new features like support for dark mode in macOS (see screenshot below).
+
+
+
+![alt text](https://github.com/kapitainsky/RcloneBrowser/wiki/images/Screenshot1.png)
+
+
+All releases are signed with my PGP key
+
+Fingerprint: 5173 1FD9 E29C BEC2 8506  8F02 31DB 6AEE 3AC2 8075
+
+https://keys.openpgp.org/vks/v1/by-fingerprint/51731FD9E29CBEC285068F0231DB6AEE3AC28075
+
+Enjoy and report if anything is broken. Please note that I am not a programmer and I doubt I could work on any major changes. Also rclone-browser as it is now is enough for my usage. But small fixes and tweaks are always possible - feel free to report any issues.
 
 
 Original readme from https://github.com/mmozeiko/RcloneBrowser 
