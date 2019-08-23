@@ -13,11 +13,24 @@ I've looked around but could not find anything fully working. Some github users 
 
 I used DinCahill's changes (https://github.com/DinCahill/RcloneBrowser) as a base of my version.
 
-I have fixed whatever I found still not working and added few minor tweaks. I've recompiled and repacked everything using latest Qt (5.13.0). This on its own fixed some issues and added new features like support for dark mode in macOS (see screenshot below).
+I have fixed whatever I found still not working and added few minor tweaks. I've recompiled and repacked everything using latest Qt (5.13.0). This on its own fixed some issues and added new features like support for dark mode in macOS.
+
+Below sample screenshots:
 
 
+macOS
 
 ![alt text](https://github.com/kapitainsky/RcloneBrowser/wiki/images/Screenshot1.png)
+
+
+linux
+
+![alt text](https://github.com/kapitainsky/RcloneBrowser/wiki/images/Screenshot2.png)
+
+Windows
+
+![alt text](https://github.com/kapitainsky/RcloneBrowser/wiki/images/Screenshot3.png)
+
 
 
 All releases are signed with my PGP key
