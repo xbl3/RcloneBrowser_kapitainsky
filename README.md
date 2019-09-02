@@ -42,16 +42,14 @@ Enjoy and report if anything is broken. Please note that I am not a programmer a
 Build instructions for other Unix-like systems
 ----------------------------------------------
 
-Example commands are for Debian - they might differ for other systems
+Example commands are for Debian/Ubuntu - they might differ for other systems
 
-1. Make sure you have working compiler and cmake installed `sudo apt install g++ cmake`
-2. Install Qt v5 with package manager `sudo apt install qtbase5-dev`
+1. Install dependencies `sudo apt install git rclone g++ cmake qtbase5-dev`
 2. Clone source code from this repo `git clone https://github.com/kapitainsky/RcloneBrowser.git`
 3. Go to source folder `cd RcloneBrowser`
-3. Create new `build` folder next to `src` folder - `mkdir build && cd build`
-4. Run `cmake ..` from `build` folder to create makefile
-5. Run `cmake --build .` from `build` folder to create binary
-6. And last but not least don't forget to install rclone `curl https://rclone.org/install.sh | sudo bash`
+4. Create new `build` folder next to `src` folder - `mkdir build && cd build`
+5. Run `cmake ..` from `build` folder to create makefile
+6. Run `cmake --build .` from `build` folder to create binary
 
 
 Build instructions for openSUSE linux
@@ -59,9 +57,9 @@ Build instructions for openSUSE linux
 1. Install dependencies `sudo zypper install git cmake gcc-c++ rclone libQt5Core-devel libQt5Widgets-devel`
 2. Clone source code from this repo `git clone https://github.com/kapitainsky/RcloneBrowser.git`
 3. Go to source folder `cd RcloneBrowser`
-3. Create new `build` folder next to `src` folder - `mkdir build && cd build`
-4. Run `cmake ..` from `build` folder to create makefile
-5. Run `cmake --build .` from `build` folder to create binary
+4. Create new `build` folder next to `src` folder - `mkdir build && cd build`
+5. Run `cmake ..` from `build` folder to create makefile
+6. Run `cmake --build .` from `build` folder to create binary
 
 Original readme from https://github.com/mmozeiko/RcloneBrowser 
 --------
