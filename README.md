@@ -54,7 +54,14 @@ Example commands are for Debian - they might differ for other systems
 6. And last but not least don't forget to install rclone `curl https://rclone.org/install.sh | sudo bash`
 
 
-
+Build instructions for openSUSE linux
+-------------------------------------
+1. Install dependencies `sudo zypper install git cmake gcc-c++ rclone libQt5Core-devel libQt5Widgets-devel`
+2. Clone source code from this repo `git clone https://github.com/kapitainsky/RcloneBrowser.git`
+3. Go to source folder `cd RcloneBrowser`
+3. Create new `build` folder next to `src` folder - `mkdir build && cd build`
+4. Run `cmake ..` from `build` folder to create makefile
+5. Run `cmake --build .` from `build` folder to create binary
 
 Original readme from https://github.com/mmozeiko/RcloneBrowser 
 --------
